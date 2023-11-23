@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  nginx:
+    container_name: nginx
+    image: nginx:latest
+    ports:
+      - "80:80"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+  api:
+    restart: always
+    depends_on:
+      - nginx
+    build:
+      context: https://github.com/TeaTea-1611/DevOps3.git#main
+      dockerfile: Dockerfile
+    ports:
+      - "8083-8085:8083"
