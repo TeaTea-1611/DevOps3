@@ -11,6 +11,10 @@ app.get("/users", function (req, res) {
       {
         id: 2,
         name: "user02"
+      },
+      {
+        id: 3,
+        name: "user03"
       }
     ]
   })
