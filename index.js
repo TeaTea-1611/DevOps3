@@ -6,26 +6,21 @@ app.get("/users", function (req, res) {
     data: [
       {
         id: 1,
-        name: "user01"
+        name: "user01",
+        age: 19,
       },
       {
         id: 2,
-        name: "user02"
+        name: "user02",
+        age: 19,
       },
       {
         id: 3,
-        name: "user03"
+        name: "user03",
+        age: 19,
       },
-      {
-        id: 4,
-        name: "user04"
-      },
-      {
-        id: 5,
-        name: "user05"
-      }
-    ]
-  })
+    ],
+  });
 });
 
 app.get("/", function (req, res) {
