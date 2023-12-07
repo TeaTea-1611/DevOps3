@@ -19,6 +19,11 @@ app.get("/users", function (req, res) {
         name: "user03",
         age: 19,
       },
+      {
+        id: 4,
+        name: "user04",
+        age: 19,
+      },
     ],
   });
 });
