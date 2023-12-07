@@ -14,16 +14,6 @@ app.get("/users", function (req, res) {
         name: "user02",
         age: 19,
       },
-      {
-        id: 3,
-        name: "user03",
-        age: 19,
-      },
-      {
-        id: 4,
-        name: "user04",
-        age: 19,
-      },
     ],
   });
 });
